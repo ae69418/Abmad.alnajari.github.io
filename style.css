@@ -1,0 +1,48 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #f8f8f8;
+  direction: rtl;
+  color: #333;
+}
+
+header {
+  background-color: #007b8f;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section {
+  padding: 30px;
+  text-align: center;
+}
+
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
