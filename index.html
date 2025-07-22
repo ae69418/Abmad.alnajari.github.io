@@ -10,78 +10,65 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f6f1; /* خلفية ناعمة بلون الورق */
-      color: #2a2a2a; /* لون نص غامق مريح للقراءة */
+      background-color: #f9f6f1;
+      color: #222;
     }
-
     header {
       background-color: #002b45;
       color: white;
       text-align: center;
       padding: 50px 20px 30px;
     }
-
     header img {
       width: 160px;
       border-radius: 12px;
       margin-bottom: 20px;
       border: 3px solid #FFD700;
     }
-
     header h1 {
       font-size: 32px;
       margin-bottom: 10px;
     }
-
     header p {
       font-size: 18px;
       color: #FFD700;
       margin: 0;
     }
-
     .button-group {
       margin-top: 20px;
     }
-
     .whatsapp-btn, .story-btn {
       display: inline-block;
       margin: 5px;
       padding: 12px 24px;
+      background-color: #25d366;
+      color: white;
       font-size: 16px;
       border: none;
       border-radius: 6px;
       text-decoration: none;
     }
-
-    .whatsapp-btn {
-      background-color: #25d366;
-      color: white;
-    }
-
     .story-btn {
       background-color: #FFD700;
       color: #002b45;
       font-weight: bold;
     }
-
     section {
       padding: 40px 20px;
       text-align: center;
+      background-color: #f9f6f1;
     }
-
     section h2 {
       font-size: 26px;
       color: #002b45;
       margin-bottom: 15px;
     }
-
     section p {
       font-size: 18px;
       line-height: 1.6;
       max-width: 800px;
       margin: auto;
     }
-
     footer {
       background-color: #001a2b;
       color: #aaa;
@@ -89,42 +76,13 @@
       padding: 20px 10px;
       font-size: 14px;
     }
-
-    ul {
-      text-align: right;
-      font-size: 16px;
-      line-height: 1.8;
-    }
-
-    /* الشريط الإعلاني */
-    .promo-bar {
-      background-color: #003366;
-      color: white;
-      padding: 10px;
-      font-size: 16px;
-      white-space: nowrap;
-      overflow: hidden;
-      box-sizing: border-box;
-    }
-
-    .promo-bar span {
-      display: inline-block;
-      padding-left: 100%;
-      animation: marquee 15s linear infinite;
-    }
-
-    @keyframes marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
-    }
   </style>
 </head>
 <body>
 
-  <!-- ✅ شريط إعلاني متحرك -->
-  <div class="promo-bar">
-    <span>🎉 عروض حصرية: اطلب 100 كارتون واحصل على 5 مجانًا + توصيل مجاني ! 📦</span>
-  </div>
+  <marquee direction="left" scrollamount="5" style="background-color:#003366; color:white; padding:10px; font-size: 16px;">
+    🎉 عروض حصرية: اطلب 100 كارتون واحصل على 5 مجانًا + توصيل مجاني ! 📦
+  </marquee>
 
   <header>
     <img src="9ed40ea9-4ac4-43da-8385-543dafa7dab5.jpeg" alt="شعار النجاري" />
@@ -147,9 +105,9 @@
     </p>
   </section>
 
-  <section style="background-color: #fff; padding: 30px;">
+  <section style="padding: 30px; text-align: right; font-family: Arial, sans-serif;">
     <h2 style="color: #003366;">لماذا تختار ورق النجاري؟</h2>
-    <ul>
+    <ul style="line-height: 1.8; font-size: 16px;">
       <li>✅ دعم الصناعة العراقية وتشجيع الشباب</li>
       <li>✅ تغليف يدوي يعكس الهوية العراقية</li>
       <li>✅ ورق عالي الجودة بسعر منافس</li>
@@ -159,13 +117,13 @@
     </ul>
   </section>
 
-  <section style="background-color: #002B5B; color: white; padding: 40px 20px;">
+  <section style="background-color: #002B5B; color: white; padding: 40px 20px; text-align: center;">
     <h2 style="font-size: 28px; margin-bottom: 20px;">منتجنا</h2>
     <p style="font-size: 18px; line-height: 1.8;">
       نقدم ورق A4 بوزن 80 غرام، أبيض نقي 100%، مصنوع من لب الخشب الطبيعي، يتميز بنعومة عالية، ومثالية للطباعة والنسخ.<br>
       الورق مغلف يدويًا بعناية باستخدام تغليف مصمم محليًا يحمل الهوية العراقية، ومطبوع عليه بفخر عبارة <strong>"Made in Iraq"</strong>.
     </p>
-    <ul style="text-align: right; font-size: 17px; list-style: '✔️ '; padding-right: 30px;">
+    <ul style="text-align: right; font-size: 17px; margin-top: 20px; list-style: '✔️ '; direction: rtl; padding-right: 30px;">
       <li>مناسب لجميع أنواع الطابعات والآلات التصوير</li>
       <li>لا يسبب إنحشار الورق</li>
       <li>قطع دقيق بمقاس 210 × 297 مم</li>
@@ -178,9 +136,13 @@
     &copy; 2025 Al Najari Paper Industry – ae69418.github.io
   </footer>
 
-  <div style="text-align: center; margin-top: 30px; font-family: Arial, sans-serif;">
-    <p style="font-size: 16px;">الموقع: العراق، كركوك، طريق ليلان – المنطقة الصناعية المطوّرة</p>
-    <p style="font-size: 16px;">رقم التواصل: <a href="tel:07700223173" style="color: #0056b3; text-decoration: none;">07700223173</a></p>
+  <div style="text-align: center; margin-top: 30px; font-family: Arial, sans-serif; background-color: #f9f6f1;">
+    <p style="font-size: 16px;">
+      الموقع: العراق، كركوك، طريق ليلان – المنطقة الصناعية المطوّرة
+    </p>
+    <p style="font-size: 16px;">
+      رقم التواصل: <a href="tel:07700223173" style="color: #0056b3; text-decoration: none;">07700223173</a>
+    </p>
   </div>
 
 </body>
