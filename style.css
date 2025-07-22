@@ -1,15 +1,16 @@
 body {
   margin: 0;
-  font-family: 'Cairo', sans-serif;
-  background-color: #fdfaf6; /* بيج فاتح */
-  color: #222;
+  background-color: #121212; /* خلفية داكنة */
+  color: #F5F5DC; /* بيج فاتح */
+  font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
 }
 
 header {
-  background-color: #002b45;
-  color: white;
+  background-color: #000000;
   text-align: center;
-  padding: 50px 20px 30px;
+  padding: 60px 20px 40px;
+  border-bottom: 2px solid #FFD700;
 }
 
 header img {
@@ -20,13 +21,14 @@ header img {
 }
 
 header h1 {
-  font-size: 32px;
+  font-size: 34px;
+  color: #FFD700;
   margin-bottom: 10px;
 }
 
 header p {
   font-size: 18px;
-  color: #FFD700;
+  color: #e0e0e0;
   margin: 0;
 }
 
@@ -34,8 +36,7 @@ header p {
   margin-top: 20px;
 }
 
-.whatsapp-btn,
-.story-btn {
+.whatsapp-btn, .story-btn, .instagram-btn {
   display: inline-block;
   margin: 5px;
   padding: 12px 24px;
@@ -43,7 +44,7 @@ header p {
   border: none;
   border-radius: 6px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .whatsapp-btn {
@@ -53,62 +54,50 @@ header p {
 
 .story-btn {
   background-color: #FFD700;
-  color: #002b45;
+  color: #000;
   font-weight: bold;
 }
 
+.instagram-btn {
+  background-color: #C13584;
+  color: white;
+}
+
 .whatsapp-btn:hover,
-.story-btn:hover {
+.story-btn:hover,
+.instagram-btn:hover {
   opacity: 0.8;
 }
 
 section {
-  padding: 40px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
 section h2 {
-  font-size: 26px;
-  color: #002b45;
-  margin-bottom: 15px;
+  font-size: 28px;
+  color: #FFD700;
+  margin-bottom: 20px;
 }
 
 section p {
   font-size: 18px;
-  line-height: 1.6;
   max-width: 800px;
   margin: auto;
 }
 
 ul {
-  list-style: none;
-  padding-right: 0;
-}
-
-ul li::before {
-  content: "✔️ ";
-  margin-left: 5px;
+  list-style: '✔️ ';
+  padding-right: 30px;
+  text-align: right;
+  font-size: 17px;
 }
 
 footer {
-  background-color: #001a2b;
-  color: #aaa;
+  background-color: #000;
+  color: #999;
   text-align: center;
   padding: 20px 10px;
   font-size: 14px;
-}
-
-.contact-info {
-  text-align: center;
-  margin-top: 30px;
-  font-family: Arial, sans-serif;
-}
-
-.contact-info p {
-  font-size: 16px;
-}
-
-.contact-info a {
-  color: #0056b3;
-  text-decoration: none;
+  border-top: 1px solid #333;
 }
