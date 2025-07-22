@@ -33,9 +33,33 @@
       font-size: 18px;
       color: #FFD700;
       margin: 0;
-<div style="margin-top: 20px;">
-  <a class="whatsapp-btn" href="https://wa.me/9647700223173" target="_blank">تواصل معنا عبر واتساب</a>
-</div>
+    }
+    .social-btns {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .social-btns a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      color: white;
+      border-radius: 50%;
+      text-decoration: none;
+    }
+    .whatsapp {
+      background-color: #25d366;
+    }
+    .instagram {
+      background-color: #E1306C;
+    }
+    .social-btns img {
+      width: 22px;
+      height: 22px;
     }
     section {
       padding: 40px 20px;
@@ -71,7 +95,16 @@
     <img src="9ed40ea9-4ac4-43da-8385-543dafa7dab5.jpeg" alt="شعار النجاري" />
     <h1>شركة النجاري لصناعة الأوراق</h1>
     <p>نكتبها بفخر… على ورق صنع في العراق 🇮🇶</p>
-    <a class="whatsapp-btn" href="https://wa.me/9647700223173" target="_blank">تواصل معنا عبر واتساب</a>
+
+    <!-- أزرار التواصل -->
+    <div class="social-btns">
+      <a class="whatsapp" href="https://wa.me/9647700223173" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="واتساب" />
+      </a>
+      <a class="instagram" href="https://www.instagram.com/20hashtag?igsh=MWllYnhxc3Uxbzhsag==" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="انستغرام" />
+      </a>
+    </div>
   </header>
 
   <section>
