@@ -1,56 +1,52 @@
+/* style.css */
+
 body {
   margin: 0;
-  background-color: #111;
-  color: #f0e6d2;
-  font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f0e6; /* بيج فاتح */
+  color: #1a1a1a; /* رمادي غامق أنيق */
 }
 
 header {
-  background: linear-gradient(to bottom, #000000, #111111);
+  background-color: #001a33; /* كحلي داكن */
+  color: white;
   text-align: center;
-  padding: 60px 20px 40px;
-  border-bottom: 1px solid #FFD700;
-  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.1);
+  padding: 50px 20px 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 header img {
-  width: 150px;
+  width: 160px;
   border-radius: 12px;
   margin-bottom: 20px;
-  border: 3px solid #FFD700;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+  border: 3px solid #d4af37; /* ذهبي فاخر */
 }
 
 header h1 {
   font-size: 36px;
-  color: #FFD700;
   margin-bottom: 10px;
-  letter-spacing: 1px;
 }
 
 header p {
-  font-size: 18px;
-  color: #ccc;
+  font-size: 20px;
+  color: #d4af37;
   margin: 0;
+  font-style: italic;
 }
 
 .button-group {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
-.whatsapp-btn,
-.story-btn,
-.instagram-btn {
+.whatsapp-btn, .story-btn {
   display: inline-block;
-  margin: 5px;
-  padding: 12px 22px;
+  margin: 6px;
+  padding: 12px 24px;
   font-size: 16px;
   border: none;
   border-radius: 8px;
   text-decoration: none;
-  transition: 0.3s ease;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
 }
 
 .whatsapp-btn {
@@ -59,75 +55,58 @@ header p {
 }
 
 .story-btn {
-  background-color: #FFD700;
-  color: #000;
+  background-color: #d4af37;
+  color: #001a33;
   font-weight: bold;
 }
 
-.instagram-btn {
-  background-color: #C13584;
-  color: white;
-}
-
-.whatsapp-btn:hover,
-.story-btn:hover,
-.instagram-btn:hover {
-  transform: translateY(-2px);
+.whatsapp-btn:hover, .story-btn:hover {
   opacity: 0.9;
 }
 
 section {
-  padding: 60px 20px;
+  padding: 50px 20px;
   text-align: center;
-  background-color: #1a1a1a;
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
 }
 
 section h2 {
   font-size: 28px;
-  color: #FFD700;
-  margin-bottom: 25px;
-  text-shadow: 0 0 6px rgba(255, 215, 0, 0.3);
+  color: #001a33;
+  margin-bottom: 20px;
 }
 
 section p {
   font-size: 18px;
+  line-height: 1.8;
   max-width: 850px;
   margin: auto;
-  color: #e0e0e0;
 }
 
 ul {
-  list-style: '✔️ ';
-  padding-right: 30px;
-  text-align: right;
+  line-height: 1.8;
   font-size: 17px;
-  color: #e0e0e0;
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "✔️ ";
+  color: #d4af37;
 }
 
 footer {
-  background-color: #000;
-  color: #888;
+  background-color: #000d1a;
+  color: #ccc;
   text-align: center;
   padding: 20px 10px;
   font-size: 14px;
-  border-top: 1px solid #FFD700;
 }
 
 a {
-  color: #FFD700;
+  color: #003366;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-}
-
-marquee {
-  background-color: #002244;
-  color: #fff;
-  padding: 10px;
-  font-size: 16px;
-  border-bottom: 1px solid #FFD700;
 }
