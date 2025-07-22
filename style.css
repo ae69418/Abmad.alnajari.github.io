@@ -1,108 +1,163 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f6; /* عاجي فاتح */
-  color: #2f2f2f; /* رمادي داكن */
-}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="شركة النجاري لصناعة وتغليف ورق A4 في العراق - جودة وطنية واحترافية عالية.">
+  <title>شركة النجاري | Al Najari Paper Industry</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f6;
+      color: #2f2f2f;
+    }
+    header {
+      background-color: #34495e;
+      color: #fdfdfd;
+      text-align: center;
+      padding: 50px 20px 30px;
+    }
+    header img {
+      width: 160px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      border: 3px solid #d4af37;
+    }
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #f1c40f;
+    }
+    header p {
+      font-size: 18px;
+      color: #ecf0f1;
+      margin: 0;
+    }
+    .button-group {
+      margin-top: 20px;
+    }
+    .whatsapp-btn, .story-btn, .instagram-btn {
+      display: inline-block;
+      margin: 5px;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+    }
+    .whatsapp-btn {
+      background-color: #27ae60;
+      color: white;
+    }
+    .story-btn {
+      background-color: #f1c40f;
+      color: #34495e;
+      font-weight: bold;
+    }
+    .instagram-btn {
+      background-color: #d87093;
+      color: white;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #f9f9f6;
+    }
+    section h2 {
+      font-size: 26px;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+    section p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+    }
+    ul {
+      line-height: 1.8;
+      font-size: 16px;
+      text-align: right;
+      list-style-type: '✅ ';
+      padding-right: 30px;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+    }
+    marquee {
+      background-color: #3b5998;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      direction: left;
+    }
+  </style>
+</head>
+<body>
 
-header {
-  background-color: #34495e; /* أزرق رمادي أنيق */
-  color: #fdfdfd;
-  text-align: center;
-  padding: 50px 20px 30px;
-}
+  <marquee>🎉 عروض حصرية: اطلب 100 كارتون واحصل على 5 مجانًا + توصيل مجاني ! 📦</marquee>
 
-header img {
-  width: 160px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  border: 3px solid #d4af37; /* ذهبي راقٍ */
-}
+  <header>
+    <img src="logo.jpeg" alt="شعار النجاري" />
+    <h1>شركة النجاري لصناعة الأوراق</h1>
+    <p>نكتبها بفخر… على ورق صنع في العراق 🇮🇶</p>
+    <div class="button-group">
+      <a class="whatsapp-btn" href="https://wa.me/9647700223173" target="_blank">واتساب</a>
+      <a class="instagram-btn" href="https://www.instagram.com/20hashtag" target="_blank">انستغرام</a>
+      <a class="story-btn" href="my-story.html">📖 قصتي</a>
+    </div>
+  </header>
 
-header h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-  color: #f1c40f; /* ذهبي هادئ */
-}
+  <section>
+    <h2>من نحن</h2>
+    <p>
+      شركة النجاري لصناعة الأوراق هي شركة عراقية ناشئة أسسها شاب طموح دون سن الثامنة عشرة، يؤمن بأن الصناعة الوطنية قادرة على المنافسة والتميّز. نختص بقص وتغليف ورق A4 بجودة عالية وباستخدام أفضل الخامات المستوردة، مع لمسة عراقية أصيلة.
+      <br><br>
+      بدأنا من الصفر، لكن بإصرارنا وجهودنا نهدف إلى أن نكون الاسم الأول في سوق الورق داخل العراق. نوفّر منتجًا يتميز بالنقاء، والمتانة، والتغليف الاحترافي، ونلتزم بأن يحمل كل رزمة من ورقنا فخر الصناعة العراقية.
+    </p>
+  </section>
 
-header p {
-  font-size: 18px;
-  color: #ecf0f1;
-  margin: 0;
-}
+  <section>
+    <h2>لماذا تختار ورق النجاري؟</h2>
+    <ul>
+      <li>دعم الصناعة العراقية وتشجيع الشباب</li>
+      <li>تغليف يدوي يعكس الهوية العراقية</li>
+      <li>ورق عالي الجودة بسعر منافس</li>
+      <li>جاهزية لتجهيز المدارس والمكاتب بكميات كبيرة</li>
+      <li>إمكانية التوصيل لجميع المحافظات</li>
+      <li>خدمة ما بعد البيع واهتمام بالزبون</li>
+    </ul>
+  </section>
 
-.button-group {
-  margin-top: 20px;
-}
+  <section>
+    <h2>منتجنا</h2>
+    <p>
+      نقدم ورق A4 بوزن 80 غرام، أبيض نقي 100%، مصنوع من لب الخشب الطبيعي، يتميز بنعومة عالية، ومثالية للطباعة والنسخ.<br>
+      مغلف يدويًا بعناية باستخدام تغليف محلي يحمل الهوية العراقية، ومطبوع عليه بفخر عبارة <strong>"Made in Iraq"</strong>.
+    </p>
+    <ul>
+      <li>مناسب لجميع أنواع الطابعات</li>
+      <li>لا يسبب إنحشار الورق</li>
+      <li>قطع دقيق بمقاس 210 × 297 مم</li>
+      <li>خالٍ من البقع والشوائب</li>
+      <li>مغلف بإحكام للحفاظ على الورق من الرطوبة</li>
+    </ul>
+  </section>
 
-.whatsapp-btn,
-.story-btn,
-.instagram-btn {
-  display: inline-block;
-  margin: 5px;
-  padding: 12px 24px;
-  font-size: 16px;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-}
+  <footer>
+    &copy; 2025 Al Najari Paper Industry – ae69418.github.io
+  </footer>
 
-.whatsapp-btn {
-  background-color: #27ae60;
-  color: white;
-}
+  <div style="text-align: center; margin-top: 30px;">
+    <p>📍 العراق، كركوك، طريق ليلان – المنطقة الصناعية المطوّرة</p>
+    <p>📞 <a href="tel:07700223173" style="color: #0056b3; text-decoration: none;">07700223173</a></p>
+  </div>
 
-.story-btn {
-  background-color: #f1c40f;
-  color: #34495e;
-  font-weight: bold;
-}
-
-.instagram-btn {
-  background-color: #d87093;
-  color: white;
-}
-
-section {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #f9f9f6;
-}
-
-section h2 {
-  font-size: 26px;
-  color: #2c3e50;
-  margin-bottom: 15px;
-}
-
-section p {
-  font-size: 18px;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: auto;
-}
-
-ul {
-  line-height: 1.8;
-  font-size: 16px;
-  text-align: right;
-  list-style-type: '✅ ';
-  padding-right: 30px;
-}
-
-footer {
-  background-color: #2c3e50;
-  color: #ccc;
-  text-align: center;
-  padding: 20px 10px;
-  font-size: 14px;
-}
-
-marquee {
-  background-color: #3b5998;
-  color: white;
-  padding: 10px;
-  font-size: 16px;
-  direction: left;
-}
+</body>
+</html>
