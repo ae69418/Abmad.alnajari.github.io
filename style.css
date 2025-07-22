@@ -1,48 +1,90 @@
-
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #0D2845;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* الشريط الإعلاني */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: #FFD700;
+  color: #000;
+  font-size: 18px;
+  padding: 10px 0;
+  position: relative;
   direction: rtl;
-  color: #333;
+}
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
 
 header {
-  background-color: #FFD700;
-  color: white;
-  padding: 30px;
   text-align: center;
+  background-color: #002b45;
+  color: white;
+  padding: 40px 20px;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 28px;
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
 header p {
   font-size: 18px;
-  margin-top: 10px;
+  color: #FFD700;
+  margin: 0;
 }
 
-.whatsapp-button {
-  display: inline-block;
-  margin-top: 20px;
-  background-color: #25D366;
+.icon-btn {
+  font-size: 24px;
   color: white;
-  padding: 10px 20px;
+  margin: 0 10px;
   text-decoration: none;
+}
+
+.icon-btn:hover {
+  color: #FFD700;
+}
+
+.story-btn {
+  margin-left: 10px;
+  background-color: #FFD700;
+  color: #002b45;
+  padding: 6px 14px;
   border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.story-btn:hover {
+  background-color: #e0c200;
 }
 
 section {
-  padding: 30px;
+  padding: 40px 20px;
   text-align: center;
 }
 
-footer {
-  background-color: #222;
-  color: #ccc;
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
+section h2 {
+  font-size: 26px;
+  color: #002b45;
+  margin-bottom: 15px;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
 }
