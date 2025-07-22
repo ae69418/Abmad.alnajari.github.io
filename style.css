@@ -1,14 +1,13 @@
-/* style.css - الألوان الأصلية */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4; /* خلفية رمادية فاتحة */
-  color: #222; /* نص داكن */
+  background-color: #f9f9f6; /* عاجي فاتح */
+  color: #2f2f2f; /* رمادي داكن */
 }
 
 header {
-  background-color: #002b45; /* كحلي ناعم */
-  color: white;
+  background-color: #34495e; /* أزرق رمادي أنيق */
+  color: #fdfdfd;
   text-align: center;
   padding: 50px 20px 30px;
 }
@@ -17,17 +16,18 @@ header img {
   width: 160px;
   border-radius: 12px;
   margin-bottom: 20px;
-  border: 3px solid #FFD700; /* ذهبي */
+  border: 3px solid #d4af37; /* ذهبي راقٍ */
 }
 
 header h1 {
   font-size: 32px;
   margin-bottom: 10px;
+  color: #f1c40f; /* ذهبي هادئ */
 }
 
 header p {
   font-size: 18px;
-  color: #FFD700; /* ذهبي */
+  color: #ecf0f1;
   margin: 0;
 }
 
@@ -35,7 +35,9 @@ header p {
   margin-top: 20px;
 }
 
-.whatsapp-btn, .story-btn {
+.whatsapp-btn,
+.story-btn,
+.instagram-btn {
   display: inline-block;
   margin: 5px;
   padding: 12px 24px;
@@ -43,27 +45,34 @@ header p {
   border: none;
   border-radius: 6px;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 
 .whatsapp-btn {
-  background-color: #25d366;
+  background-color: #27ae60;
   color: white;
 }
 
 .story-btn {
-  background-color: #FFD700;
-  color: #002b45;
+  background-color: #f1c40f;
+  color: #34495e;
   font-weight: bold;
+}
+
+.instagram-btn {
+  background-color: #d87093;
+  color: white;
 }
 
 section {
   padding: 40px 20px;
   text-align: center;
+  background-color: #f9f9f6;
 }
 
 section h2 {
   font-size: 26px;
-  color: #002b45;
+  color: #2c3e50;
   margin-bottom: 15px;
 }
 
@@ -74,10 +83,26 @@ section p {
   margin: auto;
 }
 
+ul {
+  line-height: 1.8;
+  font-size: 16px;
+  text-align: right;
+  list-style-type: '✅ ';
+  padding-right: 30px;
+}
+
 footer {
-  background-color: #001a2b;
-  color: #aaa;
+  background-color: #2c3e50;
+  color: #ccc;
   text-align: center;
   padding: 20px 10px;
   font-size: 14px;
+}
+
+marquee {
+  background-color: #3b5998;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  direction: left;
 }
