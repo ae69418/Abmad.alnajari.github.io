@@ -1,134 +1,179 @@
-
-‏<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="شركة النجاري لصناعة وتغليف ورق A4 في العراق - جودة وطنية واحترافية عالية.">
-  <title>شركة النجاري | Al Najari Paper Industry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>شركة النجاري لصناعة الأوراق</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #2c3e50;
-      color: white;
+      background-color: #f8f9fa;
+      color: #1a1a1a;
     }
 
-    marquee {
-      background-color: #003366;
+    .announcement-bar {
+      width: 100%;
+      overflow: hidden;
+      background-color: #002b5b;
       color: white;
-      padding: 10px;
-      font-size: 16px;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 10px 0;
+      position: relative;
+      direction: rtl;
+    }
+
+    .announcement-content {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll-right-left 25s linear infinite;
+    }
+
+    @keyframes scroll-right-left {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
     }
 
     header {
+      background-color: #34495e;
       text-align: center;
-      padding: 40px 20px 20px;
+      padding: 30px 10px;
     }
 
     header img {
-      width: 200px;
-      border: 3px solid #FFD700;
-      border-radius: 10px;
-      margin-bottom: 20px;
+      width: 220px;
+      border: 3px solid gold;
+      border-radius: 12px;
+      margin-bottom: 10px;
     }
 
     header h1 {
-      font-size: 32px;
-      color: #FFD700;
+      color: gold;
+      font-size: 26px;
       margin: 10px 0;
     }
 
     header p {
-      font-size: 18px;
-      margin-bottom: 25px;
-    }
-
-    .button-group {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-
-    .button-group a {
-      text-decoration: none;
-      padding: 12px 20px;
-      border-radius: 6px;
+      color: #ddd;
       font-size: 16px;
-      font-weight: bold;
+    }
+
+    .buttons {
+      margin: 20px 0;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 8px;
       display: inline-block;
+      font-weight: bold;
     }
 
-    .story-btn {
-      background-color: #FFD700;
-      color: #2c3e50;
-    }
-
-    .whatsapp-btn {
-      background-color: #25D366;
-      color: white;
-    }
-
-    .instagram-btn {
-      background-color: #e84393;
-      color: white;
-    }
+    .whatsapp { background-color: #25D366; color: white; }
+    .instagram { background-color: #e1306c; color: white; }
+    .story { background-color: #f1c40f; color: black; }
 
     section {
-      background-color: #f4f4f4;
-      color: #2c3e50;
       padding: 40px 20px;
-      text-align: center;
     }
 
     section h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #002b5b;
     }
 
     section p {
-      font-size: 18px;
-      max-width: 800px;
+      max-width: 700px;
       margin: auto;
       line-height: 1.8;
+      font-size: 16px;
     }
 
     footer {
-      background-color: #001a2b;
-      color: #aaa;
+      background-color: #002b5b;
+      color: white;
       text-align: center;
       padding: 20px 10px;
       font-size: 14px;
+    }
+
+    footer a {
+      color: #00d5ff;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
-  <marquee direction="right">📦 عروض حصرية: اطلب الآن! خصومات… عبوة مجانية لكل 100 كارتون + توصيل مجاني! 📦</marquee>
+  <!-- شريط الإعلان -->
+  <div class="announcement-bar">
+    <div class="announcement-content">
+      📦 عروض حصرية: اطلب الآن! خصومات كبيرة على كارتونات ورق A4 – تواصل معنا الآن!
+    </div>
+  </div>
 
+  <!-- الهيدر -->
   <header>
-    <img src="logo.jpeg" alt="شعار النجاري" />
+    <img src="9ed40ea9-4ac4-43da-8385-543dafa7dab5.jpeg" alt="شعار الشركة">
     <h1>شركة النجاري لصناعة الأوراق</h1>
     <p>نكتبها بفخر... على ورق صنع في العراق 🇮🇶</p>
-
-    <div class="button-group">
-      <a href="my-story.html" class="story-btn">📖 قصتي</a>
-      <a href="https://instagram.com" class="instagram-btn" target="_blank">انستغرام</a>
-      <a href="https://wa.me/9647700223173" class="whatsapp-btn" target="_blank">واتساب</a>
+    <div class="buttons">
+      <a class="story" href="my-story.html">📖 قصتي</a>
+      <a class="instagram" href="#">انستغرام</a>
+      <a class="whatsapp" href="https://wa.me/9647700223173">واتساب</a>
     </div>
   </header>
 
+  <!-- من نحن -->
   <section>
     <h2>من نحن</h2>
     <p>
       شركة النجاري لصناعة الأوراق هي شركة عراقية ناشئة أسسها شاب طموح دون سن الثامنة عشرة، يؤمن بأن الصناعة الوطنية قادرة على المنافسة والتميّز. نختص بقص وتغليف ورق A4 بجودة عالية وباستخدام أفضل الخامات المستوردة، مع لمسة عراقية أصيلة.
     </p>
+    <p>
+      بدأنا من الصفر، لكن بإصرارنا وجهودنا نهدف إلى أن نكون الاسم الأول في سوق الورق داخل العراق. نوفّر منتجًا يتميز بالنقاء، والمتانة، والتغليف الاحترافي، ونلتزم بأن يحمل كل رزمة من ورقنا فخر الصناعة العراقية.
+    </p>
   </section>
 
+  <!-- المنتج -->
+  <section style="background-color: #e8f1f8;">
+    <h2>منتجنا</h2>
+    <p>
+      نقدم ورق A4 بوزن 80 غرام، أبيض نقي 100%، مصنوع من لب الخشب الطبيعي، يتميز بنعومة عالية، ومثالية للطباعة والنسخ.
+      <br>الورق مغلف يدويًا بعناية باستخدام تغليف مصمم محليًا يحمل الهوية العراقية، ومطبوع عليه بفخر عبارة "Made in Iraq".
+    </p>
+    <p>
+      ✅ مناسب لجميع أنواع الطابعات وآلات التصوير<br>
+      ✅ لا يسبب إنحشار الورق<br>
+      ✅ قطع دقيق بمقاس 210 × 297 مم<br>
+      ✅ خالٍ من البقع والشوائب<br>
+      ✅ مغلف بإحكام للحفاظ على الورق من الرطوبة
+    </p>
+  </section>
+
+  <!-- لماذا تختارنا -->
+  <section>
+    <h2>لماذا تختار ورق النجاري؟</h2>
+    <p>
+      ✅ دعم الصناعة العراقية وتشجيع الشباب<br>
+      ✅ تغليف يدوي يعكس الهوية العراقية<br>
+      ✅ ورق عالي الجودة بسعر منافس<br>
+      ✅ جاهزية لتجهيز المدارس والمكاتب بكميات كبيرة<br>
+      ✅ إمكانية التوصيل لجميع المحافظات<br>
+      ✅ خدمة ما بعد البيع واهتمام بالزبون
+    </p>
+  </section>
+
+  <!-- الفوتر -->
   <footer>
-    &copy; 2025 Al Najari Paper Industry – ae69418.github.io
+    Al Najari Paper Industry – ae69418.github.io © 2025<br>
+    📍 العراق، كركوك، طريق ليلان – المنطقة الصناعية المطوّرة<br>
+    📞 رقم التواصل: <a href="tel:07700223173">07700223173</a>
   </footer>
 
 </body>
