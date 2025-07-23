@@ -1,112 +1,37 @@
 
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="شركة النجاري لصناعة وتغليف ورق A4 في العراق - جودة وطنية واحترافية عالية.">
-  <title>شركة النجاري | Al Najari Paper Industry</title>
-  <style>
-    body {
-      background-color: #121212;
-      color: #FFD700;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #1f1f1f;
-      padding: 20px;
-      text-align: center;
-      font-size: 28px;
-      font-weight: bold;
-      border-bottom: 2px solid #FFD700;
-    }
-    .banner {
-      background-color: #FFD700;
-      color: black;
-      padding: 10px;
-      font-weight: bold;
-      text-align: center;
-      overflow: hidden;
-      white-space: nowrap;
-      box-sizing: border-box;
-    }
-    .banner span {
-      display: inline-block;
-      padding-left: 100%;
-      animation: scroll 10s linear infinite;
-    }
-    @keyframes scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
-    }
-    .section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    h2 {
-      color: #FFD700;
-      border-bottom: 1px solid #FFD700;
-      padding-bottom: 10px;
-    }
-    p {
-      line-height: 1.7;
-      font-size: 18px;
-    }
-    .contact {
-      background-color: #1f1f1f;
-      padding: 20px;
-      text-align: center;
-      border-top: 2px solid #FFD700;
-    }
-    .whatsapp-btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #25D366;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
 
-  <header>شركة النجاري لصناعة ورق A4</header>
+/* الشريط الإعلاني */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: #FFD700;
+  color: #000;
+  font-size: 18px;
+  padding: 10px 0;
+  position: relative;
+  direction: rtl;
+}
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
 
-  <div class="banner">
-    <span>ورق A4 بجودة عالية - صناعة عراقية 🇮🇶 | اطلب الآن عبر الواتساب</span>
-  </div>
-
-  <div class="section">
-    <h2>من نحن</h2>
-    <p>نحن شركة متخصصة في قص وتغليف ورق A4 بجودة عالية وفق المعايير العالمية. نعمل بكل فخر داخل العراق لتقديم منتج ينافس المستورد ويُلبي احتياجات السوق المحلي من حيث الجودة والسعر.</p>
-  </div>
-
-  <div class="section">
-    <h2>منتجنا</h2>
-    <p>رزم ورق A4 بوزن 80 غرام، لون أبيض نقي، تغليف احترافي وأنيق، تحمل شعار "صُنع في العراق". مناسب للطباعة، التصوير، الاستخدام المكتبي والمدرسي.</p>
-  </div>
-
-  <div class="section">
-    <h2>لماذا تختار ورق النجاري؟</h2>
-    <ul>
-      <li>صناعة وطنية ذات جودة عالية</li>
-      <li>سعر منافس للسوق</li>
-      <li>تغليف جذاب واحترافي</li>
-      <li>دعم للمنتج المحلي</li>
-    </ul>
-  </div>
-
-  <div class="contact">
-    <h2>تواصل معنا</h2>
-    <p>📞 07700223173</p>
-    <p>📧 info@alnajari.com</p>
-    <a class="whatsapp-btn" href="https://wa.me/9647700223173" target="_blank">راسلنا على واتساب</a>
-  </div>
-
-</body>
-</html>
+header {
+  text-align: center;
+  background-color: #002b45;
+  color: white;
+  padding: 40px 20px;
+}
